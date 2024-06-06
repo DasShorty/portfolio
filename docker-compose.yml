@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    image: nginx
+    volumes:
+      - /home/anthony/website/webfiles:/usr/share/nginx/html
+      - /home/anthony/website/config:/etc/nginx/conf.d/
+    expose:
+      - "8080:8080"
+    networks:
+      default:
+networks:
+  default:

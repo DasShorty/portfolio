@@ -1,0 +1,27 @@
+/* color palette from <https://github.com/vuejs/theme> */
+* {
+    margin: 0;
+}
+
+:root {
+    --background-color: #141214;
+    --passive-color: #CFCFCF;
+    --agressive-color: #FFFF;
+    --box-color: #19141A;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: var(--background-color);
+    color: var(--agressive-color);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url("@/assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Self";
+    src: url("@/assets/fonts/Roboto-Regular.ttf");
+}
